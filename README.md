@@ -34,6 +34,7 @@ The dataset was split into train_df , valid_df , and test_df . Data was loaded u
 1. num_workers = 6
 2. batch_size = 1
 3. custom  collate_fn function
+
 A pretrained Faster R-CNN model (FasterRCNN_ResNet50_FPN_Weights.DEFAULT) was used. The final ROI head  layer was replaced with a custom layer.
 
 
