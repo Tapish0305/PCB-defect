@@ -34,7 +34,9 @@ The dataset was split into train_df , valid_df , and test_df . Data was loaded u
 1. num_workers = 6
 2. batch_size = 1
 3. custom  collate_fn function
-A pretrained Faster R-CNN model (FasterRCNN_ResNet50_FPN_Weights.DEFAULT) was used. The final ROI head  layer was replaced with a custom layer:
+A pretrained Faster R-CNN model (FasterRCNN_ResNet50_FPN_Weights.DEFAULT) was used. The final ROI head  layer was replaced with a custom layer.
+
+
 
 # Training and Optimization
 The model was trained using Adam optimizer , a learning rate scheduler , and ODNN loss computation . The following hyperparameters were used:
@@ -44,19 +46,24 @@ The model was trained using Adam optimizer , a learning rate scheduler , and ODN
 4. Epochs: 25
    
 The training loop  followed these steps:
-1. Iterate through the training datase
- Compute loss using:
-![Screenshot 2025-02-28 135933](https://github.com/user-attachments/assets/2fbfdaf3-66c0-4357-8f71-537c60b804f9)
+1. Iterate through the training dataset and compute loss
 
 
- Perform gradient backpropagation :
-![Screenshot 2025-02-28 135944](https://github.com/user-attachments/assets/fea10d36-9dc0-4147-8cbe-4c96939aaf34)
+ 2. Perform gradient backpropagation and then update the weights
+
 
 
 Adjust the learning rate scheduler .
 Print and log the training loss .
 The model was evaluated on the validation set by calculating the Intersection over Union (IoU)  metric
 After training, the models  and corresponding loss/IoU curves  were stored for comparison. Then, I plotted  the Loss Measure vs Number of Epochs and IoU Curve vs Number of Epochs. Finally, I used the trained model to predict  bounding boxes on test images  and saved the model path . Later, I developed a refined model  that enhances prediction accuracy  on testing results.
+
+## Result - 
+![results 1](https://github.com/user-attachments/assets/cdfec633-f1e5-4529-8b54-d2a00e68b53a)
+Represents the average IoU value over all the validation data
+![Uploading correlation value.png…]()
+
+This shows the reduction of correlation value among network filters
 
 # Conclusion
 This project successfully implemented PCB defect detection  using ODNN  and a Faster R-CNN model . The dataset was processed efficiently , and the model was trained with effective loss computation  and optimization techniques . Future improvements can include:
