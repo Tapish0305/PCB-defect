@@ -25,7 +25,10 @@ A custom PCBData dataset was created to:
 5. image_id
 6.  is_crowd
 Bounding boxes were visualized to confirm accurate labeling.
- 
+
+# Model Architecture
+![model](https://github.com/user-attachments/assets/8c1aff7c-96f4-437d-a3be-1c45bed397a2)
+
 # Model Preparation
 The dataset was split into train_df , valid_df , and test_df . Data was loaded using:
 1. num_workers = 6
