@@ -39,7 +39,41 @@ The model was trained using Adam optimizer , a learning rate scheduler , and ODN
 2. Weight Decay: 0.0005
 3.  StepLR Scheduler: step_size=3, gamma=0.1
 4. Epochs: 25
+   
 The training loop  followed these steps:
 1. Iterate through the training datase
  Compute loss using:
+![Screenshot 2025-02-28 135933](https://github.com/user-attachments/assets/2fbfdaf3-66c0-4357-8f71-537c60b804f9)
+
+
+ Perform gradient backpropagation :
+![Screenshot 2025-02-28 135944](https://github.com/user-attachments/assets/fea10d36-9dc0-4147-8cbe-4c96939aaf34)
+
+
+Adjust the learning rate scheduler .
+Print and log the training loss .
+The model was evaluated on the validation set by calculating the Intersection over Union (IoU)  metric
+After training, the models  and corresponding loss/IoU curves  were stored for comparison. Then, I plotted  the Loss Measure vs Number of Epochs and IoU Curve vs Number of Epochs. Finally, I used the trained model to predict  bounding boxes on test images  and saved the model path . Later, I developed a refined model  that enhances prediction accuracy  on testing results .
+
+# Conclusion
+This project successfully implemented PCB defect detection  using ODNN  and a Faster R-CNN model . The dataset was processed efficiently , and the model was trained with effective loss computation  and optimization techniques . Future improvements can include:
+Experimenting with different backbone architectures
+Fine-tuning hyperparameters for better performance
+Implementing real-time defect detection using edge devices
+
+
+# Dependencies
+ Python 3.x
+ PyTorch
+ torchvision
+ NumPy
+ OpenCV
+ Pandas
+ Matplotlib
+ tqdm
+ 
+# Acknowledgments
+Special thanks to Kaggle  for providing the dataset  and to the open-source community  for valuable tools and frameworks  that made this project possible! 🚀
+
+
 
