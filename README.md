@@ -60,8 +60,10 @@ After training, the models  and corresponding loss/IoU curves  were stored for c
 
 ## Result - 
 ![results 1](https://github.com/user-attachments/assets/cdfec633-f1e5-4529-8b54-d2a00e68b53a)
+
 Represents the average IoU value over all the validation data
-![Uploading correlation value.png…]()
+![correlation value](https://github.com/user-attachments/assets/170d9f33-dbde-4c8a-aeaf-074683e68ca9)
+
 
 This shows the reduction of correlation value among network filters
 
