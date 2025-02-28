@@ -77,14 +77,14 @@ Implementing real-time defect detection using edge devices.
 
 
 # Dependencies
- Python 3.x
- PyTorch
- torchvision
- NumPy
- OpenCV
- Pandas
- Matplotlib
- tqdm
+ 1. Python
+ 2. PyTorch
+ 3. torchvision
+ 4. NumPy
+ 5. OpenCV
+ 6. Pandas
+ 7. Matplotlib
+ 8. tqdm
  
 # Acknowledgments
 Special thanks to Kaggle  for providing the dataset  and to the open-source community  for valuable tools and frameworks  that made this project possible!
